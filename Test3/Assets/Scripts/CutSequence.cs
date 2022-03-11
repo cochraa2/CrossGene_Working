@@ -6,8 +6,8 @@ public class CutSequence : MonoBehaviour
 
    
 {
-    public GameObject CutsceneCam;
-    public GameObject Main_Camera;
+    public GameObject Cutscene_Cam;
+    public GameObject CM_FreeLook;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +18,8 @@ public class CutSequence : MonoBehaviour
     IEnumerator TheSequence ()
     {
         yield return new WaitForSeconds(10);
-        Main_Camera.SetActive(true);
-        CutsceneCam.SetActive(false);
+        Cutscene_Cam.SetActive(false);
+        CM_FreeLook.SetActive(true);
     }
 
     // Update is called once per frame
