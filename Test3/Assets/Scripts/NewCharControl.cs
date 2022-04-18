@@ -116,6 +116,6 @@ public class NewCharControl : MonoBehaviour
 
     private void Attack()
     {
-        anim.SetBool("Axe", true);
+        anim.SetBool("Axe", true,);
     }
 }
